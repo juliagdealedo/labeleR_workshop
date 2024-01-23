@@ -5,22 +5,15 @@ path <- tempdir()
 setwd(path)
 
 # Loading necessary packages ####
-if(!require(devtools)){ 
-  install.packages("devtools")
-  #only needed if it is not in CRAN
+if(!require(labeleR)){ 
+  install.packages("labeleR")
+  library(labeleR)
 }
 
 if(!require(tinytex)){
 tinytex::install_tinytex()
   #install tinytex if it is not installed
 }
-
-#installing labeleR ####
-#devtools::install_github("EcologyR/labeleR")
-install.packages("labeleR")
-library(labeleR)
-
-
 
 
 create_collection_label(
