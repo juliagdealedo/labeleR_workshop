@@ -16,7 +16,8 @@ tinytex::install_tinytex()
 }
 
 #installing labeleR ####
-devtools::install_github("EcologyR/labeleR")
+#devtools::install_github("EcologyR/labeleR")
+install.packages("labeleR")
 library(labeleR)
 
 
