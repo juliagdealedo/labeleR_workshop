@@ -10,6 +10,8 @@ setwd(path)
   library(labeleR)
 
 
+#in case tinytex returns errors, try unistalling it first
+#tinytex::install_tinytex()
 tinytex::install_tinytex(version = "2023.12") # latest version has some troubles!
 
 
