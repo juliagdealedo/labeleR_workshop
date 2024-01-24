@@ -26,4 +26,6 @@ create_collection_label(
 )
 
 setwd("~")
+
+cat("\n\n \U1F44D Everything has been correctly installed \U2714")
 }
