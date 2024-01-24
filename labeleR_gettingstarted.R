@@ -5,10 +5,10 @@ path <- tempdir()
 setwd(path)
 
 # Loading necessary packages ####
-if(!require(labeleR)){ 
+
   install.packages("labeleR")
   library(labeleR)
-}
+
 
 if(!require(tinytex)){
 tinytex::install_tinytex()
@@ -27,5 +27,5 @@ create_collection_label(
 
 setwd("~")
 
-cat("\n\n \U1F44D Everything has been correctly installed \U2714")
+cat("\n\n \U1F44D Everything has been correctly installed \U2714\n")
 }
