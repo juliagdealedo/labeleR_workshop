@@ -10,10 +10,9 @@ setwd(path)
   library(labeleR)
 
 
-if(!require(tinytex)){
 tinytex::install_tinytex()
   #install tinytex if it is not installed
-}
+
 
 
 create_collection_label(
