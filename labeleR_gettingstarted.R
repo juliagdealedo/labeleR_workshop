@@ -10,11 +10,10 @@ setwd(path)
   library(labeleR)
 
 
-tinytex::install_tinytex()
-  #install tinytex if it is not installed
+tinytex::install_tinytex(version = "2023.12") # latest version has some troubles!
 
 
-
+{
 create_collection_label(
   data = collection.table,
   path = "labeleR_output",
@@ -27,4 +26,5 @@ create_collection_label(
 setwd("~")
 
 cat("\n\n \U1F44D Everything has been correctly installed \U2714\n")
+}
 }
