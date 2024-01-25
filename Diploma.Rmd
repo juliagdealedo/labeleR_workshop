@@ -1,0 +1,60 @@
+---
+title: ''
+geometry: "left=2cm,right=2cm,top=1cm,bottom=1cm"
+output:
+  pdf_document: default
+classoption: landscape
+params:
+  name.column.i: ""
+  type: ""
+  title: ""
+  date: ""
+  hours: ""
+  freetext: ""
+  signer: ""
+  signer.role: ""
+---
+
+\begin{center}
+\pagenumbering{gobble}
+
+% logos %
+\includegraphics[height=4cm]{lpic.png} 
+\hfill
+\includegraphics[height=4cm]{rpic.png}
+\linebreak
+\vfill
+
+{\fontsize{80pt}{80pt}\selectfont\bf DIPLOMA} 
+\vfill
+{\fontsize{40pt}{40pt}\selectfont\bf Otorgado a:} \\
+{\fontsize{40pt}{40pt}\selectfont `r params$name.column.i` } \\
+\vfill
+
+\Large
+
+por haber asistido \\
+`r params$type` \emph {`r params$title`} \\
+\vfill
+
+`r params$freetext` \\
+\vfill
+
+con fecha `r params$date` \\
+\vfill
+
+y una duración de `r params$hours` hora(s). \\
+\vfill
+
+
+% firma %
+Firmado por: \\
+\vfill
+\includegraphics[height=4cm]{spic.png}\\
+`r params$signer` \\
+`r params$signer.role` \\
+
+\end{center}
+\pagebreak
+
+
